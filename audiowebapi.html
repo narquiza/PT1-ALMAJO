@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Collection</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Georgia", serif;
+    }
+
+    body {
+      background: #f9f6f1;
+      color: #333;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+      padding-bottom: 10px;
+      border-bottom: 3px solid #c49b66;
+    }
+
+    header h1 {
+      font-size: 2.3rem;
+      color: #7a4c10;
+    }
+
+    header p {
+      font-style: italic;
+      color: #555;
+    }
+
+    .books-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+      gap: 25px;
+    }
+
+    .book-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .book-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+    }
+
+    .book-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .book-title {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #4a2b0f;
+      margin-bottom: 8px;
+    }
+
+    .book-author {
+      font-size: 0.95rem;
+      color: #7a4c10;
+      margin-bottom: 10px;
+    }
+
+    .book-description {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 12px;
+      min-height: 50px;
+    }
+
+    .book-price {
+      font-weight: bold;
+      color: #b33c00;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Classic Book Collection</h1>
+      <p>Timeless stories for every reader</p>
+    </header>
+
+    <div class="books-container">
+      <div class="book-card">
+        <img src="book1.jpg" alt="Pride and Prejudice">
+        <div class="book-title">Pride and Prejudice</div>
+        <div class="book-author">Jane Austen</div>
+        <div class="book-description">A witty exploration of manners, love, and social standing in 19th century England.</div>
+        <div class="book-price">₱ 550</div>
+      </div>
+
+      <div class="book-card">
+        <img src="book2.jpg" alt="1984">
+        <div class="book-title">1984</div>
+        <div class="book-author">George Orwell</div>
+        <div class="book-description">A chilling dystopian novel about government surveillance and loss of freedom.</div>
+        <div class="book-price">₱ 480</div>
+      </div>
+
+      <div class="book-card">
+        <img src="book3.jpg" alt="Moby Dick">
+        <div class="book-title">Moby-Dick</div>
+        <div class="book-author">Herman Melville</div>
+        <div class="book-description">A tale of obsession and revenge as Captain Ahab hunts the great white whale.</div>
+        <div class="book-price">₱ 630</div>
+      </div>
+
+      <div class="book-card">
+        <img src="book4.jpg" alt="The Great Gatsby">
+        <div class="book-title">The Great Gatsby</div>
+        <div class="book-author">F. Scott Fitzgerald</div>
+        <div class="book-description">A tragic story of wealth, love, and the American Dream during the Jazz Age.</div>
+        <div class="book-price">₱ 520</div>
+      </div>
+
+      <div class="book-card">
+        <img src="book5.jpg" alt="To Kill a Mockingbird">
+        <div class="book-title">To Kill a Mockingbird</div>
+        <div class="book-author">Harper Lee</div>
+        <div class="book-description">A moving story about racial injustice and moral growth in the American South.</div>
+        <div class="book-price">₱ 600</div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Book Haven. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
